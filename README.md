@@ -24,7 +24,7 @@ Se você deseja corrigir rapidamente seus problemas de imcompatibilidade de driv
 2. **Torne o script executável:**
 
    ```bash
-   chmod +x aumatic_fix.sh
+   chmod +x automatic_fix.sh
    ```
 
 
