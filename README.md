@@ -1,8 +1,10 @@
 # 🎯 **Driver MT7902 WiFi & Bluetooth Correção Automática para Linux**
-Repositório responsável pelo desenvolvimento dos drivers para o Mediatek mt7902    
+Repositório responsável pelo desenvolvimento dos drivers Mediatek mt7902 e outros:    
 [OnlineLearningTutorials](https://github.com/OnlineLearningTutorials/mt7902_temp)
 
-## ✅ Funcionamento verificado
+> *Para informações adicionais sobre os drivers, consulte o repositório mantenedor.*
+
+## ✅ **Funcionamento verificado**
 Essa correção foi verificada e está funcionando corretamente na máquina:
 
 * **Marca:** ACER
@@ -11,7 +13,7 @@ Essa correção foi verificada e está funcionando corretamente na máquina:
 * **Kernel Version:** 6.17+ (Linux)
 * **OS:** Linux Mint 22.3 (Ou distros similares Debian-based)
 
-## 🚀 Correção automática (Recomendado)
+## 🚀 **Correção automática (Recomendado)**
 Se você deseja corrigir rapidamente seus problemas de imcompatibilidade de drivers Wi-Fi e Bluetooth em qualquer kernel moderno, siga estas etapas:
 
 1. **Abra seu terminal** e clone o repositório:
@@ -34,7 +36,7 @@ Se você deseja corrigir rapidamente seus problemas de imcompatibilidade de driv
    sudo bash automatic_fix.sh
    ```
 
-### 📖 O que este script faz:
+### 📖 **O que este script faz:**
 * **Verifica dependências:** Garante que você tenha `gcc`, `make`, e seu atual `kernel-headers` instalado.
 * **Compila Drivers:** Constrói ambos drivers automaticamente (WiFi e Bluetooth) para sua versão exata do kernel.
 * **Correção persistente:** Instala um serviço no sistema garantindo que sua rede Wi-Fi permaneça ativa mesmo após reiniciar o computador.
@@ -43,17 +45,17 @@ Se você deseja corrigir rapidamente seus problemas de imcompatibilidade de driv
 > [!NOTE]
 > Você precisará de uma conexão com a internet (via Ethernet ou USB tethering) na primeira execução, será feito o download das ferramentas de compilação necessárias.
 
-## 🔧 Firmwares usados
+## 🔧 **Firmwares usados**
 Firmwares são armazenados na pasta `firmware`.   
 
-## 📁 Clonando o repositório
+## 📁 **Clonando o repositório**
 Clone o repositório em sua máquina local
 
   ```bash
   git clone --depth 1 https://github.com/lucas-glsantos/DriverLinux-MT79.git
   ```
 
-## 💻 WiFi ✅
+## 💻 **WiFi** ✅
 > [!IMPORTANT]
 > Uma opção secundária de repositório funcional com algumas limitações [Aqui](https://github.com/OnlineLearningTutorials/mt7902_temp)
 
@@ -83,7 +85,7 @@ Para instalar o módulo compactado no módulo do kernel no sistema, execute o se
 make module_install
 ```
 
-## 📱 Bluetooth ✅
+## 📱 **Bluetooth** ✅
 > [!WARNING]
 > Se houver conflito com o driver Bluetooth `gen4-mt7902` então, por favor, remova o firmware Bluetooth para que ele não interfira com este driver.
 > ``` sudo rm /lib/firmware/mediatek/mt7902/BT_RAM_CODE_MT7902_1_1_hdr.bin.zst ```
@@ -105,3 +107,7 @@ sudo insmod btusb.ko
 ```
 
 Agora verifique se o seu WIFI e Bluetooth estão funcionando.
+
+## 📜 **License**
+
+*A licença GNU General Public License v3.0 (GPL-3.0) é uma licença de software livre do tipo copyleft forte, publicada pela Free Software Foundation em 2007.*
